@@ -5,6 +5,7 @@ import React, { useContext } from 'react'
 import { Marker } from 'react-map-gl'
 
 const Markers = () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { userLocations, setUserLocations } = useContext(UserLocationContext);
     const { sourceCoordinates, setSourceCoordinates } = useContext(SourceCoordinatesContext);
     const { destinationCoordinates, setDestinationCoordinates } = useContext(DestinationCoordinatesContext);
