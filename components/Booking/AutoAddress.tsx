@@ -8,8 +8,8 @@ const AutoAddress = () => {
     const sessionToken = uuidv4();
     const [source, setSource] = useState<any>();
     const [sourceChanges, setSourceChanges] = useState<any>(false);
-    const { sourceCoordinates, setSourceCoordinates } = useContext(SourceCoordinatesContext);
-    const { destinationCoordinates, setDestinationCoordinates } = useContext(DestinationCoordinatesContext);
+    const { setSourceCoordinates } = useContext(SourceCoordinatesContext);
+    const { setDestinationCoordinates } = useContext(DestinationCoordinatesContext);
     const [destinations, setDestinations] = useState<any>();
     const [destinationChange, setDestinationChanges] = useState<any>(false)
     const [addressList, setAddressList] = useState<any>([]);
