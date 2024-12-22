@@ -12,10 +12,10 @@ import MapBoxRoute from './MapBoxRoute';
 import TimeDistance from './TimeDistanece';
 const BASE_URL_DIRECTION_ROUTE = "https://api.mapbox.com/directions/v5/mapbox/driving/"
 const MapBox = () => {
-    const { userLocations, setUserLocations } = useContext(UserLocationContext)
+    const { userLocations } = useContext(UserLocationContext)
     const mapRef = useRef<any>(null);
-    const { sourceCoordinates, setSourceCoordinates } = useContext(SourceCoordinatesContext);
-    const { destinationCoordinates, setDestinationCoordinates } = useContext(DestinationCoordinatesContext);
+    const { sourceCoordinates } = useContext(SourceCoordinatesContext);
+    const { destinationCoordinates } = useContext(DestinationCoordinatesContext);
     const { directionRoutData, setDirectionsRouteData } = useContext(DirectionsDataContext)
     useEffect(() => {
         if (sourceCoordinates) {
