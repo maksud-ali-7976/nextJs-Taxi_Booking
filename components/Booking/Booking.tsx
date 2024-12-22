@@ -5,8 +5,7 @@ import Car from './Car'
 import Payment from './Payment'
 import { CarAmountContext } from '@/context/SelectedCarAmount'
 const Booking = () => {
-  const screenHeight = window.innerHeight * 0.72;
-  const { carAmount, setCarAmount } = useContext(CarAmountContext);
+  const { carAmount} = useContext(CarAmountContext);
   const callHandler = async ()=>{
     window.location.href = "tel:7976619389"
   }
